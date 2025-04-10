@@ -83,7 +83,7 @@ export default function Projects() {
               
               <Link 
                 href={`/projects/${project.id}`} 
-                className="text-amber-300 hover:underline"
+                className="text-amber-300"
               >
                 Details →
               </Link>
