@@ -11,9 +11,9 @@ const spectral = Spectral({
 })
 
 export const metadata: Metadata = {
-  title: 'Your Name | Personal Website',
-  description: 'A high-performance personal website showcasing my work and skills',
-  metadataBase: new URL('https://yourwebsite.com'),
+  title: 'Will Chen | Robotics Engineer',
+  description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
+  metadataBase: new URL('https://willchen.com'),
   alternates: {
     canonical: '/',
   },
@@ -22,17 +22,17 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: 'Your Name | Personal Website',
-    description: 'A high-performance personal website showcasing my work and skills',
-    url: 'https://yourwebsite.com',
-    siteName: 'Your Name',
+    title: 'Will Chen | Robotics Engineer',
+    description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
+    url: 'https://willchen.com',
+    siteName: 'Will Chen',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Your Name | Personal Website',
-    description: 'A high-performance personal website showcasing my work and skills',
+    title: 'Will Chen | Robotics Engineer',
+    description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
   },
 }
 
@@ -63,18 +63,13 @@ function Header() {
   return (
     <header className="sticky top-0 z-10 backdrop-blur-sm bg-custom-brown/80 border-b border-white/10">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
-              <span className="font-bold text-xl">Your Name</span>
-            </div>
-            <nav className="ml-6 flex space-x-8">
-              <a href="/" className="inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-amber-200">Home</a>
-              <a href="/about" className="inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-amber-200">About</a>
-              <a href="/projects" className="inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-amber-200">Projects</a>
-              <a href="/contact" className="inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-amber-200">Contact</a>
-            </nav>
-          </div>
+        <div className="flex justify-center h-20">
+          <nav className="flex space-x-16 items-center">
+            <a href="/" className="inline-flex items-center px-1 pt-1 text-lg font-medium hover:text-amber-200">Home</a>
+            <a href="/about" className="inline-flex items-center px-1 pt-1 text-lg font-medium hover:text-amber-200">About</a>
+            <a href="/projects" className="inline-flex items-center px-1 pt-1 text-lg font-medium hover:text-amber-200">Projects</a>
+            <a href="/contact" className="inline-flex items-center px-1 pt-1 text-lg font-medium hover:text-amber-200">Contact</a>
+          </nav>
         </div>
       </div>
     </header>
@@ -86,17 +81,17 @@ function Footer() {
   return (
     <footer className="bg-custom-brown border-t border-white/10">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex justify-between items-center">
-          <div>
-            <p className="text-sm text-amber-200/70">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
-            </p>
-          </div>
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p className="text-sm text-amber-200/70">
+            © 2025 Will Chen
+          </p>
+          <p className="text-sm text-amber-200/80">
+            Built with Next.js • React • TypeScript • Tailwind CSS
+          </p>
           <div className="flex space-x-6">
-            {/* Social links */}
-            <a href="https://github.com" className="text-amber-200/70 hover:text-amber-200">GitHub</a>
-            <a href="https://twitter.com" className="text-amber-200/70 hover:text-amber-200">Twitter</a>
-            <a href="https://linkedin.com" className="text-amber-200/70 hover:text-amber-200">LinkedIn</a>
+            <a href="https://github.com/will-d-chen" target="_blank" rel="noreferrer" className="text-amber-200/70 hover:text-amber-200">GitHub</a>
+            <a href="https://www.linkedin.com/in/william-d-chen-878b1b174/" target="_blank" rel="noreferrer" className="text-amber-200/70 hover:text-amber-200">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=_y5PQDYAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer" className="text-amber-200/70 hover:text-amber-200">Scholar</a>
           </div>
         </div>
       </div>
