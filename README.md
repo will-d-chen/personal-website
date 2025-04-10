@@ -1,4 +1,4 @@
-# Will Chen Personal Website
+# Personal Website
 
 [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com) ![Deployment](https://img.shields.io/badge/deployment-success-brightgreen.svg)
 
@@ -14,9 +14,8 @@ A high-performance personal website showcasing my background and research
 
 ## Performance Features
 
-- **Static Site Generation (SSG)** 
+- **Static Site Generation** 
 - **CSS Optimization** 
-- **Modern Font Loading** 
 - **Image Optimization** 
 
 ---
