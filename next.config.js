@@ -22,9 +22,6 @@ const nextConfig = {
   generateEtags: true,
   // Performance optimizations
   swcMinify: true,
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
   // Disable build tracing to prevent stack overflow
   webpack: (config, { isServer }) => {
     if (!isServer) {
@@ -38,10 +35,8 @@ const nextConfig = {
   },
   // Disable source maps in production
   productionBrowserSourceMaps: false,
-  // Disable static optimization for error pages
-  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
-  // Disable telemetry
-  telemetry: false,
+  // File extensions to handle
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js']
 }
 
 module.exports = nextConfig
