@@ -70,11 +70,11 @@ function Header() {
     <header className="sticky top-0 z-10 backdrop-blur-sm bg-custom-brown/80 border-b border-white/10">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center h-20">
-          <nav className="flex space-x-16 items-center">
-            <a href="/" className="inline-flex items-center px-1 pt-1 text-lg font-medium hover:text-amber-200">Home</a>
-            <a href="/about" className="inline-flex items-center px-1 pt-1 text-lg font-medium hover:text-amber-200">About</a>
-            <a href="/projects" className="inline-flex items-center px-1 pt-1 text-lg font-medium hover:text-amber-200">Projects</a>
-            <a href="/contact" className="inline-flex items-center px-1 pt-1 text-lg font-medium hover:text-amber-200">Contact</a>
+          <nav className="flex space-x-4 sm:space-x-8 md:space-x-16 items-center">
+            <a href="/" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Home</a>
+            <a href="/about" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">About</a>
+            <a href="/projects" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Projects</a>
+            <a href="/contact" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Contact</a>
           </nav>
         </div>
       </div>
@@ -95,9 +95,9 @@ function Footer() {
             Built with Next.js • React • TypeScript • Tailwind CSS
           </p>
           <div className="flex space-x-6">
-            <a href="https://github.com/will-d-chen" target="_blank" rel="noreferrer" className="text-amber-200/70 hover:text-amber-200">GitHub</a>
-            <a href="https://www.linkedin.com/in/william-d-chen-878b1b174/" target="_blank" rel="noreferrer" className="text-amber-200/70 hover:text-amber-200">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=_y5PQDYAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer" className="text-amber-200/70 hover:text-amber-200">Scholar</a>
+            <a href="https://github.com/will-d-chen" target="_blank" rel="noreferrer" className="text-amber-200/70">GitHub</a>
+            <a href="https://www.linkedin.com/in/william-d-chen-878b1b174/" target="_blank" rel="noreferrer" className="text-amber-200/70">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=_y5PQDYAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer" className="text-amber-200/70">Scholar</a>
           </div>
         </div>
       </div>

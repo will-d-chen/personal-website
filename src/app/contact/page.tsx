@@ -7,14 +7,14 @@ export default function Contact() {
         <div className="space-y-4">
           <div>
             <h2 className="text-lg font-medium text-amber-200">Email</h2>
-            <a href="mailto:will.chen@duke.edu" className="text-amber-300 hover:underline">
+            <a href="mailto:will.chen@duke.edu" className="text-amber-300">
               will.chen@duke.edu
             </a>
           </div>
           
           <div>
             <h2 className="text-lg font-medium text-amber-200">Phone</h2>
-            <a href="tel:9204280645" className="text-amber-300 hover:underline">
+            <a href="tel:9204280645" className="text-amber-300">
               (920) 428-0645
             </a>
           </div>
@@ -31,13 +31,13 @@ export default function Contact() {
           <div>
             <h2 className="text-lg font-medium text-amber-200">Links</h2>
             <div className="flex space-x-4 mt-2">
-              <a href="https://www.linkedin.com/in/william-d-chen-878b1b174/" target="_blank" rel="noreferrer" className="text-amber-300 hover:underline">
+              <a href="https://www.linkedin.com/in/william-d-chen-878b1b174/" target="_blank" rel="noreferrer" className="text-amber-300">
                 LinkedIn
               </a>
-              <a href="https://github.com/will-d-chen" target="_blank" rel="noreferrer" className="text-amber-300 hover:underline">
+              <a href="https://github.com/will-d-chen" target="_blank" rel="noreferrer" className="text-amber-300">
                 GitHub
               </a>
-              <a href="https://scholar.google.com/citations?user=_y5PQDYAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer" className="text-amber-300 hover:underline">
+              <a href="https://scholar.google.com/citations?user=_y5PQDYAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer" className="text-amber-300">
                 Google Scholar
               </a>
             </div>
