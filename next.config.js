@@ -12,7 +12,7 @@ const nextConfig = {
     ],
   },
   experimental: {
-    optimizeCss: true, // CSS optimization
+    optimizeCss: false,
     optimizePackageImports: ['react-icons'], // Optimize imports
   },
   poweredByHeader: false, // Security best practice
