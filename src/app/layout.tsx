@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: [
+      { url: '/flavicon.ico', sizes: '32x32' },
+      { url: '/flavicon.svg', type: 'image/svg+xml' }
+    ],
+  },
   openGraph: {
     title: 'Will Chen | Robotics Engineer',
     description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
