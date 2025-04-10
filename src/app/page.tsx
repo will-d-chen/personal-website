@@ -13,9 +13,15 @@ export default function Home() {
           <h2 className="text-xl text-amber-100/80 mb-8">
             PhD Student in Mechanical Engineering @ Duke University
           </h2>
-          <p className="text-lg text-amber-100/70">
+          <p className="text-lg text-amber-100/70 mb-8">
             Robotics • Medical Devices • Machine Learning
           </p>
+          <a 
+            href="/about" 
+            className="inline-flex items-center px-6 py-3 rounded-xl bg-amber-900/40 text-amber-200 hover:bg-amber-900/60 transition-colors"
+          >
+            About Me
+          </a>
         </div>
         <div className="md:w-2/5">
           {/* Optimized image with proper sizing and modern format */}
