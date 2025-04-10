@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal custom CSS */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Content visibility optimization */
+  img, picture, video {
+    content-visibility: auto;
+  }
+
+  /* Default rounded corners for elements */
+  input, 
+  textarea, 
+  button, 
+  select, 
+  a, 
+  div {
+    @apply rounded-xl;
+  }
+
+  /* Custom card component */
+  .card {
+    @apply bg-white/5 border border-white/10 rounded-2xl p-6 transition-all duration-200 hover:bg-white/10;
+  }
+}
