@@ -25,6 +25,23 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  // Disable build tracing to prevent stack overflow
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      }
+    }
+    return config
+  },
+  // Disable source maps in production
+  productionBrowserSourceMaps: false,
+  // Disable static optimization for error pages
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+  // Disable telemetry
+  telemetry: false,
 }
 
 module.exports = nextConfig
