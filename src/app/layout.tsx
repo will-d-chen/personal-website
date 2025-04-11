@@ -11,7 +11,7 @@ const spectral = Spectral({
 })
 
 export const metadata: Metadata = {
-  title: 'Will Chen | Robotics Engineer',
+  title: 'Will Chen',
   description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
   metadataBase: new URL('https://willchen.com'),
   alternates: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Will Chen | Robotics Engineer',
+    title: 'Will Chen',
     description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
     url: 'https://willchen.com',
     siteName: 'Will Chen',
