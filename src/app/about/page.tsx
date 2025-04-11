@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 className="text-3xl font-bold mb-8 text-amber-200">About</h1>
+      <h1 className="text-3xl font-bold mb-8 text-amber-200">About Me</h1>
       
       <div className="card prose prose-invert max-w-none">
         <p className="text-amber-100/90">

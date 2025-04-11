@@ -12,12 +12,6 @@ export default function Contact() {
             </a>
           </div>
           
-          <div>
-            <h2 className="text-lg font-medium text-amber-200">Phone</h2>
-            <a href="tel:9204280645" className="text-amber-300">
-              (920) 428-0645
-            </a>
-          </div>
           
           <div>
             <h2 className="text-lg font-medium text-amber-200">Location</h2>
