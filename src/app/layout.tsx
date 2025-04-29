@@ -7,7 +7,7 @@ const spectral = Spectral({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-spectral',
-  weight: ['200', '300', '400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700'], // Add 500 and 600 for medium and semibold
 })
 
 export const metadata: Metadata = {
@@ -55,6 +55,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${spectral.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className="antialiased bg-custom-brown text-white">
         <Header />
         <main>{children}</main>
@@ -74,6 +78,7 @@ function Header() {
             <a href="/" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Home</a>
             <a href="/about" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">About</a>
             <a href="/projects" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Projects</a>
+            <a href="/personal" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Personal</a>
             <a href="/contact" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Contact</a>
           </nav>
         </div>

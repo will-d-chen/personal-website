@@ -18,7 +18,7 @@ export default function Home() {
           </p>
           <a 
             href="/about" 
-            className="inline-flex items-center px-6 py-3 rounded-xl bg-amber-900/40 text-amber-200 hover:bg-amber-900/60 transition-colors"
+            className="inline-flex items-center px-6 py-3 rounded-xl font-bold bg-[#849483] text-white hover:bg-[#AAB8A7] transition-colors"
           >
             About Me
           </a>

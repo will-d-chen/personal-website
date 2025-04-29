@@ -10,13 +10,7 @@ A high-performance personal website showcasing my background and research
 - **Next.js** 
 - **Tailwind CSS** 
 - **React** 
-- **Static Export** 
-
-## Performance Features
-
 - **Static Site Generation** 
-- **CSS Optimization** 
-- **Image Optimization** 
 
 ---
 

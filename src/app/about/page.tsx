@@ -4,12 +4,8 @@ export default function About() {
       <h1 className="text-3xl font-bold mb-8 text-amber-200">About Me</h1>
       
       <div className="card prose prose-invert max-w-none">
-        <p className="text-amber-100/90">
-          Current PhD student in Mechanical Engineering at Duke University with research focus on robotics, 
-          medical devices, and machine learning.
-        </p>
         
-        <h2 className="text-2xl text-amber-200 mt-8 mb-4">Education</h2>
+        <h2 className="text-2xl text-amber-200 mb-4">Education</h2>
         <div className="space-y-4 text-amber-100/90">
           <div>
             <h3 className="font-semibold">Duke University</h3>

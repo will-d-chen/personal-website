@@ -16,9 +16,9 @@ export default function Contact() {
           <div>
             <h2 className="text-lg font-medium text-amber-200">Location</h2>
             <p className="text-amber-100/90">
-              Duke University<br />
-              Department of Mechanical Engineering<br />
-              Durham, NC
+              100 Science Dr.<br />
+              Department of Mechanical Engineering, Duke University<br />
+              Durham, NC 27708
             </p>
           </div>
           

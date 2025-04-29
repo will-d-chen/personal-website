@@ -138,7 +138,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
           {project.technologies.map((tech) => (
             <span 
               key={tech} 
-              className="px-3 py-1 bg-amber-900/40 text-amber-200 rounded-xl text-sm"
+              className="px-2 py-1 bg-[#849483] text-white text-xs rounded-xl"
             >
               {tech}
             </span>
