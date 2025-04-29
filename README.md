@@ -14,6 +14,7 @@ A high-performance personal website
 ## Features
 
 - **Static Site Generation** 
+- **Custom Interactive Multi-Track Audio Player** 
 - **Image Optimization** 
 - **SEO Optimization & Metadata Management** 
 - **Responsive Design** 
