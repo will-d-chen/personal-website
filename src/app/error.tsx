@@ -18,7 +18,7 @@ export default function Error({
     <div className="min-h-[50vh] flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold mb-4">Something went wrong!</h1>
       <p className="text-lg mb-6">
-        An error occurred. Please try again later or contact support if the problem persists.
+        An error occurred. Please hit try again.
       </p>
       <div className="flex gap-4">
         <button

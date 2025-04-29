@@ -55,7 +55,7 @@ export default function About() {
         <h2 className="text-2xl text-amber-200 mt-8 mb-4">Publications</h2>
         <div className="space-y-3 text-amber-100/90">
           <div>
-            <p>Chen, D., Krinsky, C., Phillips, M., Allred, C., Khan, A., Liu, L.B., Christians, U., and Yazdani, S.K. "Design and use of an ex vivo peripheral simulating bioreactor system for pharmacokinetic analysis of a drug coated stent." Bioengineering & Translational Medicine 9, no. 2 (2024): e10618.</p>
+            <p>Chen, D., Krinsky, C., Phillips, M., Allred, C., Liu, L.B., Christians, U., and Yazdani, S.K. "Design and use of an ex vivo peripheral simulating bioreactor system for pharmacokinetic analysis of a drug coated stent." Bioengineering & Translational Medicine 9, no. 2 (2024): e10618.</p>
           </div>
           
           <div>
