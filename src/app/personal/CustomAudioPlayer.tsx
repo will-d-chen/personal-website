@@ -252,7 +252,7 @@ export default function PersonalAudioPlayer() {
         ref={canvasRef}
         width={320}
         height={36}
-        className="w-full max-w-md h-9 rounded mb-2"
+        className="w-full max-w-md h-9 mb-2"
       />
     </div>
   );
