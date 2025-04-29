@@ -112,6 +112,7 @@ export default function PersonalAudioPlayer() {
       const center = canvas.width / 2;
       for (let i = 0; i < mid; i++) {
         const barHeight = (dataArray[i] / 255) * (canvas.height * 0.7); // shorter bars
+        if (!ctx) return; // Defensive: skip drawing if ctx is null
         ctx.fillStyle = '#AAB8A7'; // match button hover color
         // Right side
         const xRight = center + i * (barWidth + gap);
