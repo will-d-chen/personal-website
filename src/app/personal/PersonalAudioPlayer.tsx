@@ -100,7 +100,7 @@ export default function PersonalAudioPlayer() {
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
     function draw() {
-      analyser.getByteFrequencyData(dataArray);
+      analyser?.getByteFrequencyData(dataArray);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       // New visualizer: thinner, taller, more spacing, color amber-100
       const barCount = bufferLength;
