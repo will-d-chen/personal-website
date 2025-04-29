@@ -2,7 +2,7 @@
 
 ![Vercel](https://vercelbadge.vercel.app/api/will-d-chen/personal-website?style=for-the-badge)
 
-A high-performance personal website showcasing my background and research
+A high-performance personal website
 
 ## Technologies
 
@@ -10,7 +10,14 @@ A high-performance personal website showcasing my background and research
 - **Next.js** 
 - **Tailwind CSS** 
 - **React** 
+
+## Features
+
 - **Static Site Generation** 
+- **Image Optimization** 
+- **SEO Optimization & Metadata Management** 
+- **Responsive Design** 
+- **Accessibility (a11y) Best Practices** 
 
 ---
 
