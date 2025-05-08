@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Spectral } from 'next/font/google'
 import './globals.css'
+import { Analytics } from "@vercel/analytics/react"
 
 // Font optimization - subset loading, display swap
 const spectral = Spectral({
