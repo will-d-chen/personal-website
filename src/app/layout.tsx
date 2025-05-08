@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Spectral } from 'next/font/google'
 import './globals.css'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 // Font optimization - subset loading, display swap
 const spectral = Spectral({
@@ -65,6 +66,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
