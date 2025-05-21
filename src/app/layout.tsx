@@ -14,7 +14,7 @@ const spectral = Spectral({
 
 export const metadata: Metadata = {
   title: 'Will Chen',
-  description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
+  description: 'Danyi (Will) Chen, PhD student in Mechanical Engineering at Duke University. Researching robotics, focused ultrasound therapy, and surgical training simulators.',
   metadataBase: new URL('https://willchen.com'),
   alternates: {
     canonical: '/',
@@ -30,17 +30,20 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Will Chen',
-    description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
+    title: 'Danyi (Will) Chen | Robotics Engineer & PhD Student',
+    description: 'Danyi (Will) Chen, PhD student in Mechanical Engineering at Duke University. Researching robotics, focused ultrasound therapy, and surgical training simulators.',
     url: 'https://willchen.com',
-    siteName: 'Will Chen',
+    siteName: 'Danyi (Will) Chen',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Will Chen | Robotics Engineer',
-    description: 'Will Chen, PhD student in Mechanical Engineering at Duke University',
+    title: 'Danyi (Will) Chen | Robotics Engineer & PhD Student',
+    description: 'Danyi (Will) Chen, PhD student in Mechanical Engineering at Duke University. Researching robotics, focused ultrasound therapy, and surgical training simulators.',
+  },
+  other: {
+    'google-site-verification': 'your-verification-code', // You'll need to add your Google Search Console verification code
   },
 }
 
@@ -60,6 +63,39 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Danyi Chen",
+              "alternateName": "Will Chen",
+              "jobTitle": "PhD Student",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Duke University"
+              },
+              "alumniOf": [
+                {
+                  "@type": "CollegeOrUniversity",
+                  "name": "Duke University",
+                  "department": "Mechanical Engineering"
+                },
+                {
+                  "@type": "CollegeOrUniversity",
+                  "name": "Wake Forest University"
+                }
+              ],
+              "url": "https://will-d-chen.com",
+              "sameAs": [
+                "https://github.com/will-d-chen",
+                "https://www.linkedin.com/in/william-d-chen-878b1b174/",
+                "https://scholar.google.com/citations?user=_y5PQDYAAAAJ&hl=en&oi=sra"
+              ]
+            })
+          }}
+        />
       </head>
       <body className="antialiased bg-custom-brown text-white">
         <Header />
