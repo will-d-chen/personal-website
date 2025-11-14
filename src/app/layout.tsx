@@ -106,7 +106,7 @@ export default function RootLayout({
         <SpeedInsights />
         <Script 
           defer 
-          src="http://192.168.1.111:3000/script.js" 
+          src="https://umami.will-d-chen.com/script.js" 
           data-website-id="058127bb-8082-4386-8d9e-404fe3517717"
         />
       </body>
