@@ -20,11 +20,5 @@ A high-performance personal website built with speed and minimalism in mind.
 - **Responsive Design** 
 - **Accessibility (a11y) Best Practices** 
 
-## Performance Statistics
-
-- **Time to First Byte: 0.04s** 
-- **Largest Contentful Paint: 0.09s** 
-- **First Input Delay: 0.39ms** 
-
 ---
 
