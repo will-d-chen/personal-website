@@ -15,8 +15,9 @@ const spectral = Spectral({
 
 export const metadata: Metadata = {
   title: 'Will Chen',
-  description: 'Danyi (Will) Chen, PhD student in Mechanical Engineering at Duke University. Researching robotics, focused ultrasound therapy, and surgical training simulators.',
+  description: 'Danyi (Will) Chen | 陈丹颐, PhD student in Mechanical Engineering at Duke University. Researching robotics, focused ultrasound therapy, and surgical training simulators.',
   metadataBase: new URL('https://will-d-chen.com'),
+  keywords: ['陈丹颐', 'Danyi Chen', 'Will Chen', 'Duke University', 'PhD', 'Mechanical Engineering', 'robotics', 'focused ultrasound', 'surgical simulators'],
   alternates: {
     canonical: '/',
   },
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Danyi (Will) Chen | Robotics Engineer & PhD Student',
-    description: 'Danyi (Will) Chen, PhD student in Mechanical Engineering at Duke University. Researching robotics, focused ultrasound therapy, and surgical training simulators.',
+    title: 'Danyi (Will) Chen | 陈丹颐 | Robotics Engineer & PhD Student',
+    description: 'Danyi (Will) Chen | 陈丹颐, PhD student in Mechanical Engineering at Duke University. Researching robotics, focused ultrasound therapy, and surgical training simulators.',
     url: 'https://will-d-chen.com',
     siteName: 'Danyi (Will) Chen',
     locale: 'en_US',
@@ -70,8 +71,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Danyi Chen",
-              "alternateName": "Will Chen",
+              "name": "Danyi (Will) Chen",
+              "alternateName": ["陈丹颐", "Will Chen"],
               "jobTitle": "PhD Student",
               "worksFor": {
                 "@type": "Organization",
