@@ -16,9 +16,6 @@ A high-performance personal website built with speed and minimalism in mind.
 - **Static Site Generation** 
 - **Custom Interactive Multi-Track Audio Player** 
 - **Image Optimization** 
-- **SEO Optimization & Metadata Management** 
-- **Responsive Design** 
-- **Accessibility (a11y) Best Practices** 
 
 ---
 
