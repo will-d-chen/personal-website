@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://yourwebsite.com/sitemap.xml',
+    sitemap: 'https://will-d-chen.com/sitemap.xml',
   }
 }

@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description: 'Danyi (Will) Chen, PhD student in Mechanical Engineering at Duke University. Researching robotics, focused ultrasound therapy, and surgical training simulators.',
   },
   other: {
-    'google-site-verification': 'your-verification-code', // You'll need to add your Google Search Console verification code
+    'google-site-verification': 'fRbsFX_Ph9VuTjxZAl1ypKesArkiADGmWUi34N2SOSs',
   },
 }
 
@@ -92,7 +92,7 @@ export default function RootLayout({
               "url": "https://will-d-chen.com",
               "sameAs": [
                 "https://github.com/will-d-chen",
-                "https://www.linkedin.com/in/william-d-chen-878b1b174/",
+                "https://www.linkedin.com/in/danyi-chen-878b1b174/",
                 "https://scholar.google.com/citations?user=_y5PQDYAAAAJ&hl=en&oi=sra"
               ]
             })
@@ -105,9 +105,9 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
-        <Script 
-          defer 
-          src="https://umami.will-d-chen.com/script.js" 
+        <Script
+          defer
+          src="https://umami.will-d-chen.com/script.js"
           data-website-id="058127bb-8082-4386-8d9e-404fe3517717"
         />
       </body>
@@ -148,7 +148,7 @@ function Footer() {
           </p>
           <div className="flex space-x-6">
             <a href="https://github.com/will-d-chen" target="_blank" rel="noreferrer" className="text-amber-200/70">GitHub</a>
-            <a href="https://www.linkedin.com/in/william-d-chen-878b1b174/" target="_blank" rel="noreferrer" className="text-amber-200/70">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/danyi-chen-878b1b174/" target="_blank" rel="noreferrer" className="text-amber-200/70">LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=_y5PQDYAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer" className="text-amber-200/70">Scholar</a>
           </div>
         </div>
