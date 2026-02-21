@@ -9,6 +9,7 @@ export default function Home() {
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
             <span className="text-amber-200">Hi, I'm Will</span>
+            <span className="sr-only">陈丹颐</span>
           </h1>
           <h2 className="text-xl text-amber-100/80 mb-8">
             PhD Student in Mechanical Engineering @ Duke University
@@ -16,8 +17,8 @@ export default function Home() {
           <p className="text-lg text-amber-100/70 mb-8">
             Robotics • Medical Devices • Machine Learning
           </p>
-          <a 
-            href="/about" 
+          <a
+            href="/about"
             className="inline-flex items-center px-6 py-3 rounded-xl font-bold bg-[#849483] text-white hover:bg-[#AAB8A7] transition-colors"
           >
             About Me
@@ -62,8 +63,8 @@ export default function Home() {
             <p className="text-amber-100/90 mb-4">
               Non-invasive localized mild hyperthermia for prostate cancer treatment.
             </p>
-            <Link 
-              href="/projects/lifu-hyperthermia" 
+            <Link
+              href="/projects/lifu-hyperthermia"
               className="text-amber-300 hover:underline"
             >
               Details →
@@ -74,8 +75,8 @@ export default function Home() {
             <p className="text-amber-100/90 mb-4">
               System identification for machine turning processes with time-delay effects.
             </p>
-            <Link 
-              href="/projects/nonlinear-dynamics" 
+            <Link
+              href="/projects/nonlinear-dynamics"
               className="text-amber-300 hover:underline"
             >
               Details →
@@ -83,7 +84,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Technologies Section - Minimalist Version */}
 
     </div>
