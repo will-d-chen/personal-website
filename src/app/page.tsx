@@ -11,6 +11,9 @@ export default function Home() {
             <span className="text-amber-200">Hi, I'm Will</span>
             <span className="sr-only">陈丹颐</span>
           </h1>
+          <p className="text-lg text-amber-100/70 mb-8">
+            Danyi Chen | 陈丹颐
+          </p>
           <h2 className="text-xl text-amber-100/80 mb-8">
             PhD Student in Mechanical Engineering @ Duke University
           </h2>
