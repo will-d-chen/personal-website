@@ -6,15 +6,25 @@ export default function About() {
       <div className="card prose prose-invert max-w-none">
 
         <h2 className="text-2xl text-amber-200 mb-4">Education</h2>
-        <div className="space-y-4 text-amber-100/90">
+        <div className="space-y-6 text-amber-100/90">
           <div>
-            <h3 className="font-semibold">Duke University</h3>
-            <p>PhD in Mechanical Engineering</p>
+            <h3 className="font-semibold text-lg text-amber-50">Duke University</h3>
+            <p className="my-1 flex items-center justify-between max-w-md">
+              <span>PhD in Mechanical Engineering</span>
+              <span className="text-sm italic text-amber-200/80">Ongoing</span>
+            </p>
+            <p className="my-1 flex items-center justify-between max-w-md">
+              <span>MS in Mechanical Engineering</span>
+              
+            </p>
           </div>
 
           <div>
-            <h3 className="font-semibold">Wake Forest University</h3>
-            <p>BS in Engineering, 2022</p>
+            <h3 className="font-semibold text-lg text-amber-50">Wake Forest University</h3>
+            <p className="my-1 flex items-center justify-between max-w-md">
+              <span>BS in Engineering</span>
+              
+            </p>
           </div>
         </div>
 
@@ -54,6 +64,10 @@ export default function About() {
 
         <h2 className="text-2xl text-amber-200 mt-8 mb-4">Publications</h2>
         <div className="space-y-3 text-amber-100/90">
+          <div>
+            <p>Oladokun, O., Yamamoto, K.K., Chen, D., Triplett, L., Barter, S., Reid, C., Zachem, T.J., Mann, B.P., Jackson, K.L., and Zani, S. "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation." Surgical Innovation (2026): 15533506261451391.</p>
+          </div>
+
           <div>
             <p>Chen, D., Krinsky, C., Phillips, M., Allred, C., Liu, L.B., Christians, U., and Yazdani, S.K. "Design and use of an ex vivo peripheral simulating bioreactor system for pharmacokinetic analysis of a drug coated stent." Bioengineering & Translational Medicine 9, no. 2 (2024): e10618.</p>
           </div>
