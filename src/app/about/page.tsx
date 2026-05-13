@@ -15,7 +15,7 @@ export default function About() {
             </p>
             <p className="my-1 flex items-center justify-between max-w-md">
               <span>MS in Mechanical Engineering</span>
-              
+
             </p>
           </div>
 
@@ -23,7 +23,7 @@ export default function About() {
             <h3 className="font-semibold text-lg text-amber-50">Wake Forest University</h3>
             <p className="my-1 flex items-center justify-between max-w-md">
               <span>BS in Engineering</span>
-              
+
             </p>
           </div>
         </div>
@@ -64,38 +64,89 @@ export default function About() {
 
         <h2 className="text-2xl text-amber-200 mt-8 mb-4">Publications</h2>
         <div className="space-y-3 text-amber-100/90">
-          <div>
-            <p>Oladokun, O., Yamamoto, K.K., Chen, D., Triplett, L., Barter, S., Reid, C., Zachem, T.J., Mann, B.P., Jackson, K.L., and Zani, S. "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation." Surgical Innovation (2026): 15533506261451391.</p>
+          <div className="mb-4">
+            <p className="mb-2">O. Oladokun, K. K. Yamamoto, D. Chen, L. Triplett, S. Barter, C. Reid, T. J. Zachem, B. P. Mann, K. L. Jackson, and S. Zani, "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation," <span className="italic">Surgical Innovation</span>, 2026, Art. no. 15533506261451391.</p>
+            <div className="flex flex-wrap gap-2">
+              <a href="/Insufflatable%20Modular%20Abdominal%20Simulation%20Environment%20(MASE)%20for%20Surgical%20Training%20Simulation.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                PDF
+              </a>
+            </div>
           </div>
 
-          <div>
-            <p>Chen, D., Krinsky, C., Phillips, M., Allred, C., Liu, L.B., Christians, U., and Yazdani, S.K. "Design and use of an ex vivo peripheral simulating bioreactor system for pharmacokinetic analysis of a drug coated stent." Bioengineering & Translational Medicine 9, no. 2 (2024): e10618.</p>
+          <div className="mb-4">
+            <p className="mb-2">T. Ursillo, K. Lowry, C. Allred, M. Phillips, L. B. Liu, D. Chen, and S. K. Yazdani, "The Impact of Peripheral Vascular Motion on Acute Drug Retention of Intravascular Devices," <span className="italic">Cardiovascular Engineering and Technology</span>, vol. 16, pp. 322–332, 2025.</p>
+            <div className="flex flex-wrap gap-2">
+              <a href="https://link.springer.com/article/10.1007/s13239-025-00776-z" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                Open Access
+              </a>
+            </div>
           </div>
 
-          <div>
-            <p>Chen, D., Martinez, D., and Taylor, T.H. "Design of a Low-Cost Autonomous Epipelagic Profiling System for Oceanic Research." In 2022 Systems and Information Engineering Design Symposium (SIEDS), pp. 79-84. IEEE, 2022.</p>
+          <div className="mb-4">
+            <p className="mb-2">D. Chen, C. Krinsky, M. Phillips, C. Allred, A. Khan, L. B. Liu, U. Christians, and S. K. Yazdani, "Design and use of an ex vivo peripheral simulating bioreactor system for pharmacokinetic analysis of a drug coated stent," <span className="italic">Bioengineering &amp; Translational Medicine</span>, vol. 9, no. 2, p. e10618, 2024.</p>
+            <div className="flex flex-wrap gap-2">
+              <a href="https://aiche.onlinelibrary.wiley.com/doi/full/10.1002/btm2.10618" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                Open Access
+              </a>
+              <a href="https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/btm2.10618" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                PDF
+              </a>
+            </div>
           </div>
-          <div>
-            <p>Chen, D., Prakash, R., Chen, Z., Dias, S., Wang, V., Bridgeman, L., and Oca, S. "Design and Evaluation of a Compliant Quasi Direct Drive End-effector for Safe Robotic Ultrasound Imaging." arXiv preprint arXiv:2410.03086 (2024).</p>
+
+          <div className="mb-4">
+            <p className="mb-2">D. Chen, R. Prakash, Z. Chen, S. Dias, V. Wang, L. Bridgeman, and S. Oca, "Design and Evaluation of a Compliant Quasi Direct Drive End-effector for Safe Robotic Ultrasound Imaging," arXiv:2410.03086, 2024.</p>
+            <div className="flex flex-wrap gap-2">
+              <a href="https://arxiv.org/abs/2410.03086" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                Open Access
+              </a>
+            </div>
           </div>
 
-          <div>
-            <p>Ursillo, T., Lowry, K., Allred, C., Phillips, M., Liu, L.B., Chen, D., and Yazdani, S.K. "The Impact of Peripheral Vascular Motion on Acute Drug Retention of Intravascular Devices." Cardiovascular Engineering and Technology, 1-11.</p>
+          <div className="mb-4">
+            <p className="mb-2">D. Chen, D. Martinez, and T. H. Taylor, "Design of a Low-Cost Autonomous Epipelagic Profiling System for Oceanic Research," in <span className="italic">2022 Systems and Information Engineering Design Symposium (SIEDS)</span>, 2022, pp. 79–84.</p>
+            <div className="flex flex-wrap gap-2">
+              <a href="/Design_of_a_Low-Cost_Autonomous_Epipelagic_Profiling_System_for_Oceanic_Research.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                PDF
+              </a>
+            </div>
           </div>
-
-
-
-
         </div>
 
         <h2 className="text-2xl text-amber-200 mt-8 mb-4">Conference Presentations</h2>
         <div className="space-y-3 text-amber-100/90">
-          <div>
-            <p>Chari-Letts, D., Yamamoto, K., Oladokun, O., Chen, D., Triplett, L., Jackson, L., Codd, P., and Zani, S. "Development of Patient-specific and Dynamic ED Thoracotomy Model for Surgical Training." Presented at 2025 ACS Surgeons and Engineers.</p>
+          <div className="mb-4">
+            <p className="mb-2">D. Chari-Letts, K. K. Yamamoto, O. Oladokun, D. Chen, L. Triplett, L. Jackson, P. Codd, and S. Zani, "Development of Patient-specific and Dynamic ED Thoracotomy Model for Surgical Training," presented at <span className="italic">2025 ACS Surgeons and Engineers</span>, 2025.</p>
           </div>
 
-          <div>
-            <p>Chen, D., Dan, M., Zhang, S., Dominguez, I., Shetty, V., Gao, W., Taylor, T.H., Ranjan, S., and Su, H. "Design and Control of an Open-Source Agile Bipedal Humanoid Robot with High-Torque Density Motors for Household Assistance." Presented at International Symposium on Medical Robotics (ISMR), Georgia, USA, 2023.</p>
+          <div className="mb-4">
+            <p className="mb-2">D. Chen, M. Dan, S. Zhang, I. Dominguez, V. Shetty, W. Gao, T. H. Taylor, S. Ranjan, and H. Su, "Design and Control of an Open-Source Agile Bipedal Humanoid Robot with High-Torque Density Motors for Household Assistance," presented at <span className="italic">International Symposium on Medical Robotics (ISMR)</span>, Georgia, USA, 2023.</p>
+            <div className="flex flex-wrap gap-2">
+              <a href="/2023_ISMR_Design%20and%20Control%20of%20an%20Open-Source%20Agile%20Bipedal%20Humanoid%20Robot%20with%20High-Torque%20Density%20Motors%20for%20Household%20Assistance.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Poster
+              </a>
+            </div>
           </div>
         </div>
 
