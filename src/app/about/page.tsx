@@ -62,7 +62,7 @@ export default function About() {
           </div>
         </div>
 
-        <h2 className="text-2xl text-amber-200 mt-8 mb-4">Publications</h2>
+        <h2 id="publications" className="text-2xl text-amber-200 mt-8 mb-4">Publications</h2>
         <div className="space-y-3 text-amber-100/90">
           <div className="mb-4">
             <p className="mb-2">O. Oladokun, K. K. Yamamoto, D. Chen, L. Triplett, S. Barter, C. Reid, T. J. Zachem, B. P. Mann, K. L. Jackson, and S. Zani, "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation," <span className="italic">Surgical Innovation</span>, 2026, Art. no. 15533506261451391.</p>

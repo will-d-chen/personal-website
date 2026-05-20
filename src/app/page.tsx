@@ -57,33 +57,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Current Project Section */}
+      {/* News Section */}
       <section className="my-20">
-        <h2 className="text-2xl font-bold mb-6 text-amber-200">Current Projects</h2>
+        <h2 className="text-2xl font-bold mb-6 text-amber-200">News</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="card p-6">
-            <h3 className="text-xl font-bold mb-3 text-amber-200">Low Intensity Focused Ultrasound</h3>
+            <h3 className="text-xl font-bold mb-3 text-amber-200">New co-authored paper published!</h3>
             <p className="text-amber-100/90 mb-4">
-              Non-invasive localized mild hyperthermia for prostate cancer treatment.
+              "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation" published in Surgical Innovation.
             </p>
-            <Link
-              href="/projects/lifu-hyperthermia"
-              className="text-amber-300 hover:underline"
-            >
-              Details →
-            </Link>
-          </div>
-          <div className="card p-6">
-            <h3 className="text-xl font-bold mb-3 text-amber-200">Nonlinear Delayed Dynamics</h3>
-            <p className="text-amber-100/90 mb-4">
-              System identification for machine turning processes with time-delay effects.
-            </p>
-            <Link
-              href="/projects/nonlinear-dynamics"
-              className="text-amber-300 hover:underline"
-            >
-              Details →
-            </Link>
+            <div className="flex flex-wrap justify-between items-center gap-4">
+              <a
+                href="https://pubmed.ncbi.nlm.nih.gov/42101832/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-amber-300 hover:underline"
+              >
+                Read →
+              </a>
+              <Link
+                href="/about#publications"
+                className="text-amber-300 hover:underline"
+              >
+                All Publications →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
