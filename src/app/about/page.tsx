@@ -1,3 +1,5 @@
+import { FiCheck, FiMinus } from 'react-icons/fi';
+
 export default function About() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -11,11 +13,11 @@ export default function About() {
             <h3 className="font-semibold text-lg text-amber-50">Duke University</h3>
             <p className="my-1 flex items-center justify-between max-w-md">
               <span>PhD in Mechanical Engineering</span>
-              <span className="text-sm italic text-amber-200/80">Ongoing</span>
+              <FiMinus className="w-4 h-4 text-amber-200" title="Ongoing" />
             </p>
             <p className="my-1 flex items-center justify-between max-w-md">
               <span>MS in Mechanical Engineering</span>
-
+              <FiCheck className="w-4 h-4 text-[#849483]" title="Completed" />
             </p>
           </div>
 
@@ -23,7 +25,7 @@ export default function About() {
             <h3 className="font-semibold text-lg text-amber-50">Wake Forest University</h3>
             <p className="my-1 flex items-center justify-between max-w-md">
               <span>BS in Engineering</span>
-
+              <FiCheck className="w-4 h-4 text-[#849483]" title="Completed" />
             </p>
           </div>
         </div>
@@ -56,7 +58,7 @@ export default function About() {
             <h3 className="font-semibold">Wake Forest University</h3>
             <p className="italic mb-2">Research Advisor: Dr. Saami Yazdani</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Developed ex-vivo peripheral simulating bioreactor</li>
+              <li>Developed benchtop bioreactor to simulate peripheral artery blood-flow and motion</li>
               <li>Conducted drug-eluting stent pharmacokinetic experiments</li>
             </ul>
           </div>

@@ -15,7 +15,7 @@ export default function Home() {
             Danyi Chen | 陈丹颐
           </p>
           <h2 className="text-xl text-amber-100/80 mb-8">
-            PhD Student in Mechanical Engineering @ Duke University
+            PhD Candidate in Mechanical Engineering @ Duke University
           </h2>
           <p className="text-lg text-amber-100/70 mb-8">
             Robotics • Medical Devices • Machine Learning
