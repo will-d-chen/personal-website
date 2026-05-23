@@ -69,11 +69,11 @@ export default function About() {
           <div className="mb-4">
             <p className="mb-2">O. Oladokun, K. K. Yamamoto, D. Chen, L. Triplett, S. Barter, C. Reid, T. J. Zachem, B. P. Mann, K. L. Jackson, and S. Zani, "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation," <span className="italic">Surgical Innovation</span>, 2026, Art. no. 15533506261451391.</p>
             <div className="flex flex-wrap gap-2">
-              <a href="/Insufflatable%20Modular%20Abdominal%20Simulation%20Environment%20(MASE)%20for%20Surgical%20Training%20Simulation.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+              <a href="https://journals.sagepub.com/doi/abs/10.1177/15533506261451391" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
                 <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
-                PDF
+                Access
               </a>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function About() {
           <div className="mb-4">
             <p className="mb-2">T. Ursillo, K. Lowry, C. Allred, M. Phillips, L. B. Liu, D. Chen, and S. K. Yazdani, "The Impact of Peripheral Vascular Motion on Acute Drug Retention of Intravascular Devices," <span className="italic">Cardiovascular Engineering and Technology</span>, vol. 16, pp. 322–332, 2025.</p>
             <div className="flex flex-wrap gap-2">
-              <a href="https://link.springer.com/article/10.1007/s13239-025-00776-z" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+              <a href="https://link.springer.com/article/10.1007/s13239-025-00776-z" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-[#849483]/20 text-[#D0E0CF] hover:bg-[#849483]/30 border border-[#849483]/40 transition-all duration-200 hover:scale-105 shadow-sm">
                 <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -93,7 +93,7 @@ export default function About() {
           <div className="mb-4">
             <p className="mb-2">D. Chen, C. Krinsky, M. Phillips, C. Allred, A. Khan, L. B. Liu, U. Christians, and S. K. Yazdani, "Design and use of an ex vivo peripheral simulating bioreactor system for pharmacokinetic analysis of a drug coated stent," <span className="italic">Bioengineering &amp; Translational Medicine</span>, vol. 9, no. 2, p. e10618, 2024.</p>
             <div className="flex flex-wrap gap-2">
-              <a href="https://aiche.onlinelibrary.wiley.com/doi/full/10.1002/btm2.10618" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+              <a href="https://aiche.onlinelibrary.wiley.com/doi/full/10.1002/btm2.10618" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-[#849483]/20 text-[#D0E0CF] hover:bg-[#849483]/30 border border-[#849483]/40 transition-all duration-200 hover:scale-105 shadow-sm">
                 <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -111,7 +111,7 @@ export default function About() {
           <div className="mb-4">
             <p className="mb-2">D. Chen, R. Prakash, Z. Chen, S. Dias, V. Wang, L. Bridgeman, and S. Oca, "Design and Evaluation of a Compliant Quasi Direct Drive End-effector for Safe Robotic Ultrasound Imaging," arXiv:2410.03086, 2024.</p>
             <div className="flex flex-wrap gap-2">
-              <a href="https://arxiv.org/abs/2410.03086" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+              <a href="https://arxiv.org/abs/2410.03086" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-[#849483]/20 text-[#D0E0CF] hover:bg-[#849483]/30 border border-[#849483]/40 transition-all duration-200 hover:scale-105 shadow-sm">
                 <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -123,11 +123,11 @@ export default function About() {
           <div className="mb-4">
             <p className="mb-2">D. Chen, D. Martinez, and T. H. Taylor, "Design of a Low-Cost Autonomous Epipelagic Profiling System for Oceanic Research," in <span className="italic">2022 Systems and Information Engineering Design Symposium (SIEDS)</span>, 2022, pp. 79–84.</p>
             <div className="flex flex-wrap gap-2">
-              <a href="/Design_of_a_Low-Cost_Autonomous_Epipelagic_Profiling_System_for_Oceanic_Research.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9799420" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all duration-200 hover:scale-105 shadow-sm">
                 <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
-                PDF
+                Access
               </a>
             </div>
           </div>
