@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Static HTML Export for edge hosting
   images: {
-    unoptimized: true, // Required for static export
     formats: ['image/avif', 'image/webp'], // Modern image formats
     remotePatterns: [
       {

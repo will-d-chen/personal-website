@@ -20,12 +20,12 @@ export default function Home() {
           <p className="text-lg text-amber-100/70 mb-8">
             Robotics • Medical Devices • Machine Learning
           </p>
-          <a
+          <Link
             href="/about"
             className="inline-flex items-center px-6 py-3 rounded-xl font-bold bg-[#849483] text-white hover:bg-[#AAB8A7] transition-colors"
           >
             About Me
-          </a>
+          </Link>
         </div>
         <div className="md:w-2/5">
           {/* Optimized image with proper sizing and modern format */}

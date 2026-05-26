@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from 'next'
 import { Spectral } from 'next/font/google'
+import Link from 'next/link'
 import './globals.css'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import Script from "next/script";
 
 // Font optimization - subset loading, display swap
 const spectral = Spectral({
@@ -63,8 +63,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spectral.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -105,11 +103,6 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
-        <Script
-          defer
-          src="https://umami.will-d-chen.com/script.js"
-          data-website-id="058127bb-8082-4386-8d9e-404fe3517717"
-        />
       </body>
     </html>
   )
@@ -120,13 +113,13 @@ function Header() {
   return (
     <header className="sticky top-0 z-10 backdrop-blur-sm bg-custom-brown/80 border-b border-white/10">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center h-20">
-          <nav className="flex space-x-4 sm:space-x-8 md:space-x-16 items-center">
-            <a href="/" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Home</a>
-            <a href="/about" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">About</a>
-            <a href="/projects" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Projects</a>
-            <a href="/personal" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Personal</a>
-            <a href="/contact" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Contact</a>
+        <div className="flex justify-center min-h-20 py-2">
+          <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-8 md:gap-x-16 gap-y-2 items-center">
+            <Link href="/" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Home</Link>
+            <Link href="/about" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">About</Link>
+            <Link href="/projects" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Projects</Link>
+            <Link href="/personal" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Personal</Link>
+            <Link href="/contact" className="inline-flex items-center px-1 pt-1 text-base sm:text-lg font-medium hover:text-amber-200">Contact</Link>
           </nav>
         </div>
       </div>
