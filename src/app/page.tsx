@@ -62,9 +62,32 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6 text-amber-200">News</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="card p-6">
+            <h3 className="text-xl font-bold mb-3 text-amber-200">New paper published!</h3>
+            <p className="text-amber-100/90 mb-4">
+              "Design and Evaluation of a Compliant Quasi-Direct Drive End-Effector for Safe Robotic Ultrasound Imaging" published in IEEE Transactions on Medical Robotics and Bionics. (June 2026)
+            </p>
+            <div className="flex flex-wrap justify-between items-center gap-4">
+              <a
+                href="http://dx.doi.org/10.1109/TMRB.2026.3699216"
+                target="_blank"
+                rel="noreferrer"
+                className="text-amber-300 hover:underline"
+              >
+                Read →
+              </a>
+              <Link
+                href="/about#publications"
+                className="text-amber-300 hover:underline"
+              >
+                All Publications →
+              </Link>
+            </div>
+          </div>
+
+          <div className="card p-6">
             <h3 className="text-xl font-bold mb-3 text-amber-200">New co-authored paper published!</h3>
             <p className="text-amber-100/90 mb-4">
-              "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation" published in Surgical Innovation.
+              "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation" published in Surgical Innovation. (May 2026)
             </p>
             <div className="flex flex-wrap justify-between items-center gap-4">
               <a

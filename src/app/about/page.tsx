@@ -67,6 +67,24 @@ export default function About() {
         <h2 id="publications" className="text-2xl text-amber-200 mt-8 mb-4">Publications</h2>
         <div className="space-y-3 text-amber-100/90">
           <div className="mb-4">
+            <p className="mb-2">D. Chen, R. Prakash, V. Y. Wang, Z. Chen, S. Dias, D. M. Buckland, L. J. Bridgeman, S. R. Oca, and B. P. Mann, "Design and Evaluation of a Compliant Quasi-Direct Drive End-Effector for Safe Robotic Ultrasound Imaging," <span className="italic">IEEE Transactions on Medical Robotics and Bionics</span>, 2026.</p>
+            <div className="flex flex-wrap gap-2">
+              <a href="http://dx.doi.org/10.1109/TMRB.2026.3699216" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                Access
+              </a>
+              <a href="/Design_of_a_Compliant_Quasi_Direct_drive_End_Effector_for_Robotic_Ultrasound_Imaging.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition duration-200 hover:scale-105 shadow-sm">
+                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                PDF
+              </a>
+            </div>
+          </div>
+
+          <div className="mb-4">
             <p className="mb-2">O. Oladokun, K. K. Yamamoto, D. Chen, L. Triplett, S. Barter, C. Reid, T. J. Zachem, B. P. Mann, K. L. Jackson, and S. Zani, "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation," <span className="italic">Surgical Innovation</span>, 2026, Art. no. 15533506261451391.</p>
             <div className="flex flex-wrap gap-2">
               <a href="https://journals.sagepub.com/doi/abs/10.1177/15533506261451391" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition duration-200 hover:scale-105 shadow-sm">
@@ -104,18 +122,6 @@ export default function About() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
                 PDF
-              </a>
-            </div>
-          </div>
-
-          <div className="mb-4">
-            <p className="mb-2">D. Chen, R. Prakash, Z. Chen, S. Dias, V. Wang, L. Bridgeman, and S. Oca, "Design and Evaluation of a Compliant Quasi Direct Drive End-effector for Safe Robotic Ultrasound Imaging," arXiv:2410.03086, 2024.</p>
-            <div className="flex flex-wrap gap-2">
-              <a href="https://arxiv.org/abs/2410.03086" target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-[#849483]/20 text-[#D0E0CF] hover:bg-[#849483]/30 border border-[#849483]/40 transition duration-200 hover:scale-105 shadow-sm">
-                <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-                Open Access
               </a>
             </div>
           </div>

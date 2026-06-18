@@ -78,9 +78,9 @@ const projects = [
       'Balanced compliance for safety with stiffness for imaging quality',
       'Integrated with ROS 2 control system',
       'Validated through experimental testing',
-      'Paper submitted to ICRA 2025'
+      'Published in IEEE Transactions on Medical Robotics and Bionics (2026)'
     ],
-    publication: 'Chen, D., et al. "Design and Evaluation of a Compliant Quasi Direct Drive End-effector for Safe Robotic Ultrasound Imaging." Submitted to IEEE ICRA, 2025.'
+    publication: 'Chen, Danyi, et al. "Design and Evaluation of a Compliant Quasi-Direct Drive End-Effector for Safe Robotic Ultrasound Imaging." IEEE Transactions on Medical Robotics and Bionics (2026).'
   },
   {
     id: 'peripheral-bioreactor',
