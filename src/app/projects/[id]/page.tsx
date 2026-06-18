@@ -1,104 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-
-// Projects data
-const projects = [
-  {
-    id: 'lifu-hyperthermia',
-    title: 'Low Intensity Focused Ultrasound for Prostate Cancer',
-    description: 'Non-invasive localized mild hyperthermia treatment using focused ultrasound.',
-    detailedDescription: 'A device to deliver localized heat to prostate tissue for cancer treatment, offering a non-invasive alternative to surgery and radiation with minimal side effects.',
-    technologies: ['Ultrasound', 'Medical Devices', 'Thermal Modeling'],
-    status: 'In Progress',
-    keyPoints: [
-      'Prostate cancer is the 2nd leading cause of cancer death in men',
-      'Mild hyperthermia weakens cancer cells and enhances immune response',
-      'Focused ultrasound enables precise targeting of deep tissue',
-      'Device designed for outpatient treatment potential',
-      'Testing with anatomically accurate tissue models'
-    ]
-  },
-  {
-    id: 'nonlinear-dynamics',
-    title: 'Sparse Identification of Nonlinear Delayed Dynamics',
-    description: 'Extending SINDy framework to identify time-delay terms in machine turning processes.',
-    detailedDescription: 'A data-driven approach to identify governing equations in turning processes by incorporating time-delay effects essential for capturing regenerative cutting phenomena.',
-    technologies: ['System Identification', 'Nonlinear Dynamics', 'Feature Engineering'],
-    status: 'In Progress',
-    keyPoints: [
-      'Standard system identification techniques fail with turning processes due to time-delay',
-      'Custom libraries incorporating delay terms and modulated cutting coefficients',
-      'Systematic delay and frequency identification through parameter sweeping',
-      'Two-model approach separating acceleration and force dynamics',
-      'High prediction accuracy for cutting force dynamics'
-    ]
-  },
-  {
-    id: 'humanoid-robot',
-    title: 'Bipedal Humanoid Robot',
-    description: 'Design and control of an agile humanoid with high-torque density motors for household assistance.',
-    detailedDescription: 'A bipedal humanoid robot with novel quasi-direct-drive actuation for high bandwidth, high torque, and backdrivability without torque sensors.',
-    technologies: ['Robotics', 'Quasi-Direct Drive', 'Mechanical Design', 'Reinforcement Learning'],
-    status: 'Completed',
-    githubUrl: 'https://github.com/will-d-chen/IsaacGym-RL-Humanoid',
-    keyPoints: [
-      'Used novel quasi-direct-drive actuation without torque sensors',
-      'Implemented belt-driven transmission to reduce distal limb mass',
-      'Created modular design with separate arm, torso, and leg components',
-      'Designed for low-cost, off-the-shelf components while maintaining high performance',
-      'Applied reinforcement learning control strategies'
-    ],
-    presented: 'Chen, D., Dan, M., Zhang, S., Dominguez, I., Shetty, V., Gao, W., Taylor, T.H., Ranjan, S., and Su, H. "Design and Control of an Open-Source Agile Bipedal Humanoid Robot with High-Torque Density Motors for Household Assistance." Presented at International Symposium on Medical Robotics (ISMR), 2023.'
-  },
-  {
-    id: 'ur3e-control',
-    title: 'ROS2 Control Package for UR3E',
-    description: 'ROS2 package to control UR3e robot arms in joint space and task space using MoveIt2.',
-    detailedDescription: 'A comprehensive ROS2 package for controlling Universal Robots UR3e robot arms in both joint space and task space using MoveIt2. Compatible with any URe series robot arm.',
-    technologies: ['ROS2', 'MoveIt2', 'Robot Control', 'Python'],
-    status: 'Completed',
-    githubUrl: 'https://github.com/will-d-chen/ur3e-codebase',
-    keyPoints: [
-      'Integration with ROS2 and MoveIt2',
-      'Dual control modes: joint space and task space',
-      'Support for all URe series robots (UR3e, UR5e, UR10e, UR16e)',
-      'Trajectory planning and collision avoidance',
-      'Comprehensive tutorials and documentation'
-    ],
-  },
-  {
-    id: 'compliant-end-effector',
-    title: 'Compliant End-Effector for Robotic Ultrasound',
-    description: 'Quasi direct drive end-effector for safe patient interaction during robotic imaging.',
-    detailedDescription: 'A novel end-effector design that improves patient safety and compliance during robotic ultrasound procedures through mechanical compliance and precise force control.',
-    technologies: ['Robotics', 'Human-Robot Interaction', 'Mechanical Design'],
-    status: 'In Progress',
-    keyPoints: [
-      'Designed for safe human-robot interaction during medical imaging',
-      'Balanced compliance for safety with stiffness for imaging quality',
-      'Integrated with ROS 2 control system',
-      'Validated through experimental testing',
-      'Published in IEEE Transactions on Medical Robotics and Bionics (2026)'
-    ],
-    publication: 'Chen, Danyi, et al. "Design and Evaluation of a Compliant Quasi-Direct Drive End-Effector for Safe Robotic Ultrasound Imaging." IEEE Transactions on Medical Robotics and Bionics (2026).'
-  },
-  {
-    id: 'peripheral-bioreactor',
-    title: 'Ex Vivo Peripheral Simulating Bioreactor',
-    description: 'System to simulate in-vivo cardiovascular conditions for peripheral artery research.',
-    detailedDescription: 'A bioreactor system that simulates cardiovascular and biomechanical conditions of peripheral arteries for testing endovascular devices without animal models.',
-    technologies: ['Biomedical Engineering', 'Fluid Dynamics', 'Control Systems'],
-    status: 'Completed',
-    keyPoints: [
-      'Alternative to in-vivo animal testing for endovascular devices',
-      'Replicates physiological flow conditions',
-      'Validated through pharmacokinetic studies of drug-eluting stents',
-      'Published in Bioengineering & Translational Medicine',
-      'System adopted for ongoing research applications'
-    ],
-    publication: 'Chen, D., et al. "Design and use of an ex vivo peripheral simulating bioreactor system for pharmacokinetic analysis of a drug coated stent." Bioengineering & Translational Medicine, 2024.'
-  }
-]
+import ImageGallery from './ImageGallery'
+import { projects } from '../data'
 
 // Static path generation for optimal performance
 export function generateStaticParams() {
@@ -113,6 +16,15 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
   if (!project) {
     notFound()
   }
+  
+  const galleryImages = [
+    ...(project.mainImage ? [{
+      src: project.mainImage,
+      alt: `${project.title} overview`,
+      caption: `${project.title} Overview`
+    }] : []),
+    ...(project.images || [])
+  ]
   
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -157,9 +69,78 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
           {project.publication && (
             <div className="mt-6 p-4 bg-amber-900/20 rounded-xl">
               <h3 className="text-lg text-amber-200 mb-2">Related Publication</h3>
-              <p className="text-amber-100/90 text-sm">
+              <p className="text-amber-100/90 text-sm mb-4">
                 {project.publication}
               </p>
+              <div className="flex flex-wrap gap-2">
+                {project.articleUrl && (
+                  <a 
+                    href={project.articleUrl} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition duration-200 hover:scale-105 shadow-sm"
+                  >
+                    <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Paper
+                  </a>
+                )}
+                {project.pdfUrl && (
+                  <a 
+                    href={project.pdfUrl} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition duration-200 hover:scale-105 shadow-sm"
+                  >
+                    <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    {project.pdfLabel || 'PDF'}
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
+
+          {project.publications && (
+            <div className="mt-6 p-4 bg-amber-900/20 rounded-xl space-y-4">
+              <h3 className="text-lg text-amber-200 mb-2">Related Publications</h3>
+              {project.publications.map((pub, idx) => (
+                <div key={idx} className={idx > 0 ? "pt-4 border-t border-amber-900/40" : ""}>
+                  <p className="text-amber-100/90 text-sm mb-3">
+                    {pub.text}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {pub.articleUrl && (
+                      <a 
+                        href={pub.articleUrl} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition duration-200 hover:scale-105 shadow-sm"
+                      >
+                        <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        Paper
+                      </a>
+                    )}
+                    {pub.pdfUrl && (
+                      <a 
+                        href={pub.pdfUrl} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition duration-200 hover:scale-105 shadow-sm"
+                      >
+                        <svg className="w-3.5 h-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        {pub.pdfLabel || 'PDF'}
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>
@@ -179,6 +160,33 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             </a>
           </div>
         )}
+
+        {project.youtubeVideos && project.youtubeVideos.length > 0 && (
+          <div className="mt-12 border-t border-white/10 pt-8">
+            <h3 className="text-xl font-bold text-amber-200 mb-6 font-sans">Videos</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {project.youtubeVideos.map((video, index) => (
+                <div key={index} className="flex flex-col bg-white/5 rounded-2xl overflow-hidden border border-white/10">
+                  <div className="relative aspect-video w-full">
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src={`https://www.youtube.com/embed/${video.id}`}
+                      title={video.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <div className="p-4 bg-custom-brown/40 backdrop-blur-sm border-t border-white/5">
+                    <p className="text-amber-100/90 text-sm font-sans text-center font-medium">{video.title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <ImageGallery images={galleryImages} />
       </div>
     </div>
   )
