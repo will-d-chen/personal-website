@@ -61,46 +61,78 @@ export default function Home() {
       <section className="my-20">
         <h2 className="text-2xl font-bold mb-6 text-amber-200">News</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="card p-6">
-            <h3 className="text-xl font-bold mb-3 text-amber-200">New paper published!</h3>
-            <p className="text-amber-100/90 mb-4">
-              "Design and Evaluation of a Compliant Quasi-Direct Drive End-Effector for Safe Robotic Ultrasound Imaging" published in IEEE Transactions on Medical Robotics and Bionics. (June 2026)
-            </p>
-            <div className="flex flex-wrap justify-between items-center gap-4">
-              <a
-                href="http://dx.doi.org/10.1109/TMRB.2026.3699216"
-                target="_blank"
-                rel="noreferrer"
-                className="text-amber-300 hover:underline"
-              >
-                Read →
-              </a>
+          <div className="card overflow-hidden flex flex-col justify-between h-full !p-0">
+            <div className="p-6 flex-grow">
+              <h3 className="text-xl font-bold mb-3 text-amber-200">New paper published!</h3>
+              <p className="text-amber-100/90 mb-4">
+                "Design and Evaluation of a Compliant Quasi-Direct Drive End-Effector for Safe Robotic Ultrasound Imaging" published in IEEE Transactions on Medical Robotics and Bionics. (June 2026)
+              </p>
+            </div>
+            
+            <div className="px-6 pb-6 pt-4 border-t border-white/5 bg-custom-brown/20 flex flex-wrap items-center justify-between gap-4 mt-auto">
+              <div className="flex flex-wrap gap-2">
+                <a 
+                  href="http://dx.doi.org/10.1109/TMRB.2026.3699216"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center px-2.5 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all hover:scale-105 shadow-sm"
+                  title="Access Publication Paper"
+                >
+                  <svg className="w-3 h-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  Paper
+                </a>
+                <a 
+                  href="/Design_of_a_Compliant_Quasi_Direct_drive_End_Effector_for_Robotic_Ultrasound_Imaging.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center px-2.5 py-1 text-xs font-medium rounded-full bg-rose-500/10 text-rose-200 hover:bg-rose-500/20 border border-rose-500/20 transition-all hover:scale-105 shadow-sm"
+                  title="View PDF Document"
+                >
+                  <svg className="w-3 h-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  PDF
+                </a>
+              </div>
+              
               <Link
                 href="/about#publications"
-                className="text-amber-300 hover:underline"
+                className="text-amber-300 hover:underline text-sm font-medium ml-auto"
               >
                 All Publications →
               </Link>
             </div>
           </div>
 
-          <div className="card p-6">
-            <h3 className="text-xl font-bold mb-3 text-amber-200">New co-authored paper published!</h3>
-            <p className="text-amber-100/90 mb-4">
-              "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation" published in Surgical Innovation. (May 2026)
-            </p>
-            <div className="flex flex-wrap justify-between items-center gap-4">
-              <a
-                href="https://pubmed.ncbi.nlm.nih.gov/42101832/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-amber-300 hover:underline"
-              >
-                Read →
-              </a>
+          <div className="card overflow-hidden flex flex-col justify-between h-full !p-0">
+            <div className="p-6 flex-grow">
+              <h3 className="text-xl font-bold mb-3 text-amber-200">New co-authored paper published!</h3>
+              <p className="text-amber-100/90 mb-4">
+                "Insufflatable Modular Abdominal Simulation Environment (MASE) for Surgical Training Simulation" published in Surgical Innovation. (May 2026)
+              </p>
+            </div>
+            
+            <div className="px-6 pb-6 pt-4 border-t border-white/5 bg-custom-brown/20 flex flex-wrap items-center justify-between gap-4 mt-auto">
+              <div className="flex flex-wrap gap-2">
+                <a 
+                  href="https://journals.sagepub.com/doi/abs/10.1177/15533506261451391"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center px-2.5 py-1 text-xs font-medium rounded-full bg-amber-500/10 text-amber-200 hover:bg-amber-500/20 border border-amber-500/20 transition-all hover:scale-105 shadow-sm"
+                  title="Access Publication Paper"
+                >
+                  <svg className="w-3 h-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  Paper
+                </a>
+              </div>
+              
               <Link
                 href="/about#publications"
-                className="text-amber-300 hover:underline"
+                className="text-amber-300 hover:underline text-sm font-medium ml-auto"
               >
                 All Publications →
               </Link>
