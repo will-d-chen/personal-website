@@ -79,6 +79,8 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
                 src={img.src} 
                 alt={img.alt} 
                 fill 
+                priority={index < 4}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
